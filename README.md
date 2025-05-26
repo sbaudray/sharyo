@@ -1,18 +1,32 @@
-# Welcome to React Router!
+# Sharyo
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+A modern courier fleet management application
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- [ ] Admin
+  - [ ] As a Sharyo team member, I can see all organisations
+- [ ] Organisations
+  - [ ] As an organisation manager, I can create an organisation
+  - [ ] As an organisation driver, I can join an organisation
+- [ ] Authentication
+  - [ ] As an organisation manager, I can sign up to Sharyo
+  - [ ] As an organisation manager, I can log in to Sharyo
+  - [ ] As an organisation driver, I can log in to Sharyo
+- [ ] Drivers (scope: an organisation)
+  - [ ] As an organisation manager, I can see all drivers
+  - [ ] As an organisation manager, I can invite a driver
+  - [ ] As an organisation manager, I can kick a driver
+- [ ] Orders (scope: an organisation)
+  - [ ] As an organisation manager, I can see all orders
+  - [ ] As an organisation manager, I can create an order
+  - [ ] As an organisation manager, I can assign an order to a driver
+  - [ ] As an organisation manager, I can unassign an order
+  - [ ] As an organisation manager, I can change an order status
+  - [ ] As an organisation driver, I can see all orders assigned to me
+  - [ ] As an organisation driver, I can change the order status to delivered
+  - [ ] As an organisation driver, I can report an error for the order
+  - [ ] As an organisation driver, I can open waze from Sharyo to see the itinerary for the order
 
 ## Getting Started
 
@@ -30,6 +44,12 @@ Start the development server with HMR:
 
 ```bash
 npm run dev
+```
+
+Start the database with docker:
+
+```bash
+docker compose up
 ```
 
 Your application will be available at `http://localhost:5173`.
@@ -77,11 +97,3 @@ Make sure to deploy the output of `npm run build`
 │   ├── client/    # Static assets
 │   └── server/    # Server-side code
 ```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
