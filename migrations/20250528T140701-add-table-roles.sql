@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS roles (
 
 INSERT INTO roles (name) VALUES
 ('sharyo_admin'),
-('org_manager'),
+('org_admin'),
+('org_dispatcher'),
 ('org_driver')
 ON CONFLICT (name) DO NOTHING;
